@@ -13,12 +13,12 @@ This project represents a sample that can be used for SPA projects using .net co
 
 ## How it works:
 
-1. Registering identity service and adding RoleManager in startup.cs.
-2. Creating and adding roles to identity with CreateRoles Task in Startup.cs (Amin, Manager, Member).
-3. Adding the role to the token via the class ProfileService.cs and then calling the task CreateRoles in configure method in startup.cs.
-4. Scaffolding identity with codegenerator tool to generate the identityServer UI for customization, retriving list of roles from the databse to be selected by users to bind each user to a role in Register.cshtml.cs.
-5. Remove the registered services in IdentityHostingStartup.cs as it they are duplicated and the required services have been already registered in startup.cs.
-6. Adding rendering conditions in NavMenu.js to restrict tabs based on role claims.
+1. Registering identity service and adding RoleManager in ```startup.cs```.
+2. Creating and adding roles to identity with ``CreateRoles`` Task in ```Startup.cs``` (Amin, Manager, Member).
+3. Adding the role to the token via the class ```ProfileService.cs``` and then calling the task ```CreateRoles``` in configure method in ```startup.cs```.
+4. Scaffolding identity with codegenerator tool to generate the identityServer UI for customization, retriving list of roles from the databse to be selected by users to bind each user to a role in ```Register.cshtml.cs```.
+5. Remove the registered services in ```IdentityHostingStartup.cs``` as it they are duplicated and the required services have been already registered in ```startup.cs```.
+6. Adding rendering conditions in ```NavMenu.js``` to restrict tabs based on role claims.
 
 
 
